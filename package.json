@@ -1,0 +1,13 @@
+{
+  "name": "user-management-api",
+  "version": "1.0.0",
+  "description": "User Management REST API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^6.0.1"
+  }
+}
