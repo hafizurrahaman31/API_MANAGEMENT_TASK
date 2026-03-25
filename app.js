@@ -7,6 +7,10 @@ app.use(express.json());
 let users = [];
 let idCounter = 1;
 
+app.get('/', (req, res) => {
+  res.send('API is running..');
+});
+
 // GET /users
 app.get('/users', (req, res) => {
   try {
@@ -123,7 +127,7 @@ app.delete('/users/:id', (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
